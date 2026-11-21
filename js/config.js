@@ -10,6 +10,6 @@
    y los eventos solo se muestran en el monitor de la derecha.
    ============================================================ */
 window.TIENDA_CONFIG = {
-  GA_MEASUREMENT_ID: "G-XXXXXXXXXX", // <-- PEGA AQUÍ TU ID DE MEDICIÓN
+  GA_MEASUREMENT_ID: "G-3NRV6LBPBE", // <-- PEGA AQUÍ TU ID DE MEDICIÓN
   DEBUG_MODE: true                   // true para DebugView, false para producción
 };
