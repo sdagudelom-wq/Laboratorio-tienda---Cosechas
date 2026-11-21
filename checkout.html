@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout · Cosechas</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="cab"><div class="cab-in"><a class="logo" href="index.html">Cosechas</a><nav><a href="index.html">Catálogo</a><a href="carrito.html">Carrito <span id="badge" class="badge">0</span></a></nav></div></header>
+<main class="contenedor"><h1>Checkout</h1>
+<p class="pasos"><span id="p1" class="paso activo">1. Envío</span><span id="p2" class="paso">2. Pago simulado</span></p>
+<div class="dos-col"><div>
+<section id="paso1" class="panel"><h2>Envío</h2>
+<label class="campo">Nombre (ficticio)<input id="nombre" type="text" maxlength="40" placeholder="Ej.: Cliente de Prueba" autocomplete="off"></label>
+<label class="campo">País<select id="pais"></select></label>
+<fieldset><legend>Servicio de envío</legend>
+<label class="op"><input type="radio" name="servicio" value="Estándar" checked> <span>Estándar</span><em id="t-std"></em></label>
+<label class="op"><input type="radio" name="servicio" value="Express"> <span>Express</span><em id="t-exp"></em></label></fieldset>
+<p class="sec">Usa un nombre inventado. No escribas correo, teléfono ni documentos.</p>
+<p id="err1" class="error" hidden></p>
+<button id="btn-envio" class="btn" type="button">Continuar al pago</button></section>
+<section id="paso2" class="panel" hidden><h2>Pago simulado</h2>
+<fieldset><legend>Método de pago</legend>
+<label class="op"><input type="radio" name="pago" value="Tarjeta de crédito" checked> <span>Tarjeta de crédito</span></label>
+<label class="op"><input type="radio" name="pago" value="PSE"> <span>PSE</span></label>
+<label class="op"><input type="radio" name="pago" value="Nequi"> <span>Nequi</span></label>
+<label class="op"><input type="radio" name="pago" value="PayPal"> <span>PayPal</span></label></fieldset>
+<p class="sec">Simulación: no se piden ni se guardan datos de pago.</p>
+<button id="btn-pago" class="btn" type="button">Pagar (simulado)</button> <button id="volver" class="btn-sec" type="button">Volver</button></section>
+</div>
+<aside class="panel resumen"><h2>Resumen</h2><div id="res-lineas"></div><dl id="res-tot" class="tot"></dl></aside></div></main>
+<footer class="pie"><p>Sitio académico de simulación: no procesa pagos reales ni guarda datos personales. Usa Google Analytics 4 con fines didácticos.</p></footer>
+<script src="js/config.js"></script><script src="js/productos.js"></script><script src="js/carrito.js"></script><script src="js/analytics.js"></script><script src="js/monitor.js"></script><script src="js/checkout.js"></script>
+</body>
+</html>
